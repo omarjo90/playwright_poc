@@ -1,0 +1,20 @@
+{
+  "name": "playwright_poc",
+  "version": "1.0.0",
+  "description": "automated software testing with playwright",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=chrome",
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=edge",
+    "tests:e2e-suite": "playwright test tests/e2e/e2e-suite.spec.ts --config=e2e.config.ts --project=edge"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.3.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0"
+  }
+}
